@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using AssistentTima.ViewModels;
+using AssistantTima.ViewModels;
 
-namespace AssistentTima;
+namespace AssistantTima;
 
 public class ViewLocator : IDataTemplate
 {

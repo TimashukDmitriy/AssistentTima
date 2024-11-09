@@ -1,4 +1,4 @@
-﻿namespace AssistentTima.ViewModels;
+﻿namespace AssistantTima.ViewModels.Windows;
 
 public class MainWindowViewModel : ViewModelBase
 {

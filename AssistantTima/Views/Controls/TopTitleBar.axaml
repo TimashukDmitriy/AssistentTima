@@ -1,0 +1,29 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AssistantTima.Views.Controls.TopTitleBar">
+    <Grid Background="#FF2D2D30" Height="40">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Заголовок окна -->
+        <TextBlock Text="My Application"
+                   VerticalAlignment="Center"
+                   Margin="10,0" />
+
+        <!-- Кнопки управления окном -->
+        <StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center">
+            <!-- Свернуть -->
+            <Button Content="_" Width="40" Click="MinimizeCommand"/>
+            <!-- Развернуть/Восстановить -->
+            <Button Content="O" Width="40" Click="MaximizeCommand"/>
+            <!-- Закрыть -->
+            <Button Content="X" Width="40" Click="CloseCommand"/>
+        </StackPanel>
+    </Grid>
+    
+</UserControl>

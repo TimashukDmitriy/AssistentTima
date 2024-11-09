@@ -1,10 +1,12 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using AssistentTima.ViewModels;
-using AssistentTima.Views;
+using AssistantTima.ViewModels;
+using AssistantTima.ViewModels.Windows;
+using AssistantTima.Views;
+using AssistantTima.Views.Windows;
 
-namespace AssistentTima;
+namespace AssistantTima;
 
 public partial class App : Application
 {

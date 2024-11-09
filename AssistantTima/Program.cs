@@ -2,7 +2,7 @@
 using Avalonia.ReactiveUI;
 using System;
 
-namespace AssistentTima;
+namespace AssistantTima;
 
 sealed class Program
 {

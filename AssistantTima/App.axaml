@@ -1,7 +1,8 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="AssistentTima.App"
-             xmlns:local="using:AssistentTima"
+             x:Class="AssistantTima.App"
+             xmlns:local="using:AssistantTima"
+             xmlns:fluentAvalonia="using:FluentAvalonia.Styling"
              RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
@@ -10,6 +11,6 @@
     </Application.DataTemplates>
   
     <Application.Styles>
-        <FluentTheme />
+        <fluentAvalonia:FluentAvaloniaTheme UseSystemFontOnWindows="True" PreferSystemTheme="True"/>
     </Application.Styles>
 </Application>

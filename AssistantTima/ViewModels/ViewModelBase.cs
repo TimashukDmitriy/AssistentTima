@@ -1,6 +1,6 @@
 ﻿using ReactiveUI;
 
-namespace AssistentTima.ViewModels;
+namespace AssistantTima.ViewModels;
 
 public class ViewModelBase : ReactiveObject
 {

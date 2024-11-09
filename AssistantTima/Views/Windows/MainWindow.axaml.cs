@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace AssistentTima.Views;
+namespace AssistantTima.Views.Windows;
 
 public partial class MainWindow : Window
 {
