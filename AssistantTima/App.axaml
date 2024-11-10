@@ -9,8 +9,20 @@
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
+             
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <MergeResourceInclude Source="Resources/Svg.axaml"/>
+                <MergeResourceInclude Source="Resources/Colours.axaml"/>
+                <MergeResourceInclude Source="Resources/SvgDictionary.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
   
     <Application.Styles>
         <fluentAvalonia:FluentAvaloniaTheme UseSystemFontOnWindows="True" PreferSystemTheme="True"/>
+        <StyleInclude Source="Styles/Button.axaml"/>
     </Application.Styles>
 </Application>

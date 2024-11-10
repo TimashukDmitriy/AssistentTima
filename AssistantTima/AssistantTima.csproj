@@ -19,7 +19,12 @@
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.2.0" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.2.0" />
+        <PackageReference Include="Avalonia.Skia" Version="11.2.0" />
+        <PackageReference Include="Avalonia.Svg.Skia" Version="11.2.0" />
         <PackageReference Include="FluentAvaloniaUI" Version="2.1.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="SkiaSharp" Version="2.88.8" />
+        <PackageReference Include="Svg.Skia" Version="2.0.0.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -27,13 +32,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="ViewModels\Controls\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Update="Views\Window\MainWindow.axaml.cs">
         <DependentUpon>MainWindow.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Assets\Images\Png\ManBehind.png" />
+      <UpToDateCheckInput Remove="Assets\Images\Png\ManFront.png" />
+      <UpToDateCheckInput Remove="Assets\avalonia-logo.ico" />
     </ItemGroup>
 </Project>

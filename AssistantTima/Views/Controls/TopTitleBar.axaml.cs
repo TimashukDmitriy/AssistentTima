@@ -4,6 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Avalonia.Styling;
 using Avalonia.VisualTree;
 
 namespace AssistantTima.Views.Controls;
@@ -57,5 +58,21 @@ public partial class TopTitleBar : UserControl
     public void CloseCommand(object sender, RoutedEventArgs e)
     {
         _parentWindow?.Close();
+    }
+    
+    private void ChangeThemeCommand(object sender, RoutedEventArgs e)
+    {
+        // Получаем текущую тему
+        var theme = Application.Current.RequestedThemeVariant;
+
+        // Меняем тему
+        if (theme == ThemeVariant.Light)
+        {
+            Application.Current.RequestedThemeVariant = ThemeVariant.Dark;
+        }
+        else
+        {
+            Application.Current.RequestedThemeVariant = ThemeVariant.Light;
+        }
     }
 }

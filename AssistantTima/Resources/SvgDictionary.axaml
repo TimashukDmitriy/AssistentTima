@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <Svg x:Key="ThemeButton" Path="/Assets/Svg/ThemeLight.svg"/>
+            <Svg x:Key="MinimizeButton" Path="/Assets/Svg/MinimizeLight.svg"/>
+            <Svg x:Key="MaximizeButton" Path="/Assets/Svg/MaximizeLight.svg"/>
+            <Svg x:Key="CloseButton" Path="/Assets/Svg/CloseLight.svg"/>
+            <Svg x:Key="SettingsButton" Path="/Assets/Svg/SettingsLight.svg"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <Svg x:Key="ThemeButton" Path="/Assets/Svg/ThemeDark.svg"/>
+            <Svg x:Key="MinimizeButton" Path="/Assets/Svg/MinimizeDark.svg"/>
+            <Svg x:Key="MaximizeButton" Path="/Assets/Svg/MaximizeDark.svg"/>
+            <Svg x:Key="CloseButton" Path="/Assets/Svg/CloseDark.svg"/>
+            <Svg x:Key="SettingsButton" Path="/Assets/Svg/SettingsDark.svg"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

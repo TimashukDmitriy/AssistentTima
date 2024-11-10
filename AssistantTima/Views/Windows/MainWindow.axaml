@@ -17,6 +17,9 @@
     
     <StackPanel>
         <control:TopTitleBar/>
+        <WrapPanel>
+            <ItemsControl ItemsSource="{Binding Buttons}"/>
+        </WrapPanel>
     </StackPanel>
     
 
